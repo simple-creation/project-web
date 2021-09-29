@@ -1,0 +1,37 @@
+{
+  "name": "nextjs-pc-template",
+  "version": "1.0.0",
+  "description": "nextjs+antd+sass",
+  "main": "index.js",
+  "author": "mengyao.wang@trip.com",
+  "license": "ISC",
+  "scripts": {
+    "dev": "cross-env APP_ENV=DEV node server",
+    "uat": "cross-env APP_ENV=UAT node server",
+    "prod": "cross-env APP_ENV=PROD node server",
+    "build": "next build",
+    "analyze": "cross-env ANALYZE=true next build"
+  },
+  "dependencies": {
+    "@koa/router": "^10.1.0",
+    "antd": "^4.16.13",
+    "axios": "^0.21.1",
+    "babel-plugin-import": "^1.13.3",
+    "cross-env": "^7.0.3",
+    "http-proxy-middleware": "^1.0.3",
+    "koa": "^2.11.0",
+    "koa-router": "^8.0.8",
+    "koa2-connect": "^1.0.2",
+    "log4js": "^6.3.0",
+    "next": "^11.1.0",
+    "next-compose-plugins": "^2.2.1",
+    "nookies": "^2.5.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.42.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@next/bundle-analyzer": "^11.1.0"
+  }
+}
